@@ -1,0 +1,58 @@
+footer {
+  width: 100%;
+  height: 500px;
+  //   overflow: hidden;
+  position: relative;
+  //   z-index: 1;
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     width: 100%;
+  //     height: 100%;
+  //     top: 0;
+  //     left: 0;
+
+  //     background: url("../../../assets/images/logo.png") repeat;
+  //     background-size: 100px;
+  //     z-index: -2;
+  //   }
+
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     width: 100%;
+  //     height: 100%;
+  //     top: 0;
+  //     left: 0;
+  //     // background: rgb(7, 185, 230);
+  //     background: #fff;
+  //     opacity: 0.9;
+  //     z-index: -1;
+  //   }
+  .container {
+    display: grid;
+    grid-template-areas:
+      "info location contacts usefulLinks"
+      "info location contacts usefulLinks"
+      "inc inc inc inc";
+
+    .info {
+      grid-area: info;
+      width: 80%;
+    }
+    .location {
+      grid-area: location;
+    }
+    .contacts {
+      grid-area: contacts;
+    }
+    .useful-links {
+      grid-area: usefulLinks;
+    }
+
+    .inc {
+      grid-area: inc;
+      justify-self: center;
+    }
+  }
+}
